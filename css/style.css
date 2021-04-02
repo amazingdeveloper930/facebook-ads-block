@@ -1,0 +1,242 @@
+body {
+  width: 300px;
+  height: 90px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  cursor: default;
+  padding: 0px;
+  margin: 0px;
+}
+
+a,
+a:visited {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  width: 100%;
+  /*height:70px;*/
+
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc5946+0,fea142+100 */
+  /*background: #ededed;*/ /* Old browsers */
+  /*background: -moz-linear-gradient(left, #fc5946 0%, #fea142 100%); 
+    background: -webkit-linear-gradient(left, #fc5946 0%,#fea142 100%);
+    background: linear-gradient(to right, #fc5946 0%,#fea142 100%); 
+    */
+}
+.menu .header {
+  margin: 0px;
+  padding: 18px 0px;
+  color: white;
+  background-color: #fc5946;
+}
+
+.menu .tab {
+  display: flex;
+  color: #444444;
+  font-size: 13px;
+}
+
+.menu .tab div {
+  flex: 1;
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer;
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 5px;
+  background-color: #eaeaea;
+}
+
+.menu .tab div.active {
+  border-bottom: 0px;
+  background-color: transparent;
+}
+
+.menu .tab div.active#controls {
+  border-right: 1px solid #aaaaaa;
+}
+
+.menu .tab div.active#saved {
+  border-left: 1px solid #aaaaaa;
+}
+
+.menu .tab div:hover {
+  background-color: #f2f2f2;
+}
+
+.menu .tab div.active:hover {
+  background-color: transparent;
+}
+
+.menu_item {
+  margin: 2px 0px;
+  padding: 3px 5px 5px 5px;
+  cursor: pointer;
+}
+
+.menu_item:hover {
+  background-color: #eee;
+}
+
+.menu_item img {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  top: 3px;
+}
+
+.menu_item span {
+  cursor: hand;
+  font-size: 12px;
+}
+
+#fb_frame {
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+#support-us {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fc5946;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fc5946;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#firebase-login {
+  min-height: 110.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#firebaseLoginButton {
+  flex: 0;
+}
+
+#firebaseLoginButton span,
+#firebaseLogoutButton span {
+  padding: 5px 10px;
+  min-width: 60px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fc5946;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+#user-cont {
+  display: flex;
+}
+
+#display-name {
+  flex: 1;
+}
+
+#firebaseLogoutButton {
+  flex: 0;
+  padding-right: 10px;
+}
+
+#saved-list {
+  min-height: 100px;
+}
+
+.tutorial-icon {
+  width: 20px;
+  height: 20px;
+  color: white !important;
+  background: #aaa;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 10px;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: lightgrey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 22px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

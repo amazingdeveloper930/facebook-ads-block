@@ -1,0 +1,23 @@
+.tutorial-page {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 70%;
+    margin: 30px auto 0;
+    text-align: center;
+    border: 1px solid tomato;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tips-for-user {
+    padding: 0;
+}
+
+.tips-for-user li {
+    list-style-type: none;
+    font-style: italic;
+    padding: 3px;
+}

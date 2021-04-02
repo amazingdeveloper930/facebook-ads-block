@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <script type="text/javascript" src="js/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/facebookevent.js"></script>
+  </head>
+  <body>
+    <div id="facebook-block">
+      <div>
+        <img src="img/hackmyads.png" />
+        <h3>
+          Hack My ADS
+        </h3>
+      </div>
+
+      <div>
+        <h4 id="no-ads-text">
+          <i class="fas fa-exclamation-triangle"></i> Please scroll on your feed
+          before you can use this option.
+        </h4>
+        <div>
+          <span>Collect ads</span>
+
+          <label class="switch" style="margin: auto;">
+            <input type="checkbox" id="enable_block_posts" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div id="counters">
+      <span>Numbers</span>
+
+      <div>
+        <div>
+          <span style="color: #7887a1;">liked</span>
+          <span style="color: #fff;" id="likes_counter"> 0 </span>
+        </div>
+
+        <div>
+          <span id="message" style="color: #7887a1;">found</span
+          ><span style="color: #fff;" id="found-counter"> 0 </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-ads-block">
+      <a id="my-ads-anchor" target="_blank"
+        ><button type="button" class="myads">Collected ads</button></a
+      >
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body
+{
+    width:300px;
+    height:200px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    cursor: default;
+    padding: 5px;
+    margin: 0px;
+}
+
+a, a:visited
+{
+    color: #3b5998;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.menu_header
+{
+    color: #0F2752;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 2px;
+}
+
+.menu_item
+{
+    margin: 2px 0px;
+    padding: 3px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.menu_item:hover
+{
+    background-color: #EEE;
+}
+
+.menu_item img
+{
+    position: relative;
+    height: 12px;
+    width: 12px;
+    top: 3px;
+}
+
+.menu_item span
+{	
+	cursor: hand;
+	font-size: 12px;
+}
+
+
+#fb_frame
+{
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+#support-us {
+    font-size: 12px;
+    margin-bottom: 10px
+}

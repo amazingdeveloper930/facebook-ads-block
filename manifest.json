@@ -1,0 +1,32 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css" ],
+      "js": [ "js/lib/jquery-1.8.2.min.js", "js/html2canvas.min.js", "js/contentScript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://connect.facebook.net/ https://ssl.google-analytics.com/ https://apis.google.com https://www.gstatic.com/ https://*.firebaseio.com https://cdn.extensionanalytics.com; object-src 'self'",
+   "description": "Hack My Ads, collect Ads data from facebook",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon.png",
+      "48": "img/icon48.png"
+   },
+
+   "manifest_version": 2,
+   "name": "Hack My Ads",
+   "offline_enabled": true,
+   "page_action": {
+      "default_icon": {
+         "16": "img/icon16.png",
+         "32": "img/icon32.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Hack My Ads"
+   },
+   "permissions": [ "tabs", "notifications", "webRequest", "*://*/*", "contextMenus", "webNavigation", "webRequestBlocking" ],
+   "short_name": "Hack My Ads, collect Ads data from facebook",
+   "version": "1.0.01"
+}
